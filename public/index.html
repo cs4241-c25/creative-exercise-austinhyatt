@@ -85,6 +85,14 @@
         ctx.fillStyle = 'black';
         ctx.fillRect(350, 300, 120, 80);
         ctx.clearRect(380, 330, 60, 30); // Creates a cut-out effect
+
+        // Gradient Text
+        const textGradient = ctx.createLinearGradient(50, 470, 300, 470);
+        textGradient.addColorStop(0, 'blue');
+        textGradient.addColorStop(1, 'red');
+        ctx.fillStyle = textGradient;
+        ctx.font = '30px Arial';
+        ctx.fillText('Gradient Text', 50, 470);
     </script>
 </body>
 </html>
